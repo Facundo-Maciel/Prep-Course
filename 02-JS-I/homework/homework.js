@@ -71,7 +71,6 @@ function sonIguales(x, y) {
   // Tu código:
 
   if(x===y){
-
     return true 
   }else{
     return false
@@ -83,7 +82,7 @@ function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (console.log(str1.length)===console.log(str2.length)){
+  if (str1.length===str2.length){
     return true
   }else{
     return false
@@ -159,7 +158,7 @@ function elevarAlCubo(num) {
 function elevar(num, exponent) {
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
   // Tu código:
-  return Math.pow(num, exponente)
+  return Math.pow(num, exponent)
 }
 
 function redondearNumero(num) {
@@ -186,9 +185,9 @@ function esPositivo(numero) {
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
   if (numero > 0){
-    return "es positivo"
+    return "Es positivo"
   }else if(numero < 0){
-    return "es negativo"
+    return "Es negativo"
   }else{
      return false 
   }
@@ -212,7 +211,7 @@ function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-  return "hola"+" "+nombre
+  return "hola " + nombre + "!"
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
@@ -250,8 +249,7 @@ function esVocal(letra){
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
-  if(console.log(letra)>1){
-
+  if (letra.length>1){
     return  "Dato incorrecto"
   }else if(letra=== "a" || "e" || "i" || "o" || "u"){
     return "Es vocal"
